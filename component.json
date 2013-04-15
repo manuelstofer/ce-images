@@ -1,0 +1,13 @@
+{
+  "name": "ce-images",
+  "repo": "manuelstofer/ce-images",
+  "description": "Image upload for manuelstofer/content-element",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
