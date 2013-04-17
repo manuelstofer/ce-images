@@ -10,7 +10,7 @@ $ component install manuelstofer/ce-images
 
 ### Server
 
-ce-images provides a connect/express middleware to receive uploaded images
+ce-images provides a connect/express middleware to upload images
 
 ```Javascript
 var ceImages = require('ce-images'),
@@ -29,7 +29,7 @@ app.use('/uploads', ceImages({
 
 ### Client
 
-``Javascript
+```Javascript
 require('manuelstofer-ce-images')({uploadUrl: '/uploads/'});
 ```
 
