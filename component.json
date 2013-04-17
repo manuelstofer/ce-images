@@ -1,10 +1,13 @@
 {
   "name": "ce-images",
   "repo": "manuelstofer/ce-images",
-  "description": "Image upload for manuelstofer/content-element",
+  "description": "Image upload plugin for manuelstofer/content-element",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+      "component/event": "*",
+      "adamsanderson/trigger-event": "*"
+  },
   "development": {},
   "license": "MIT",
   "scripts": [

@@ -1,15 +1,38 @@
-
 # ce-images
 
-  Image upload for manuelstofer/content-element
+Drag and drop image upload for [content-element](https://github.com/manuelstofer/content-element)
 
 ## Installation
 
-    $ component install manuelstofer/ce-images
+```bash
+$ component install manuelstofer/ce-images
+```
 
-## API
+### Server
 
-   
+ce-images provides a connect/express middleware to receive uploaded images
+
+```Javascript
+var ceImages = require('ce-images'),
+    path     = require('path');
+
+[..snip..]
+// launch connect or express
+[..snip..]
+
+app.use('/uploads', ceImages({
+    uploadDir: path.join(__dirname, 'public', 'uploads'),
+    uploadUrl: '/uploads/'
+}));
+```
+
+
+### Client
+
+``Javascript
+require('manuelstofer-ce-images')({uploadUrl: '/uploads/'});
+```
+
 
 ## License
 
